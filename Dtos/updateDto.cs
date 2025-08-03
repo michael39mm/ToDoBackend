@@ -5,5 +5,6 @@ namespace GameStore.API.Dtos;
 public record updateDto(
     [Required] string Name,
     [Required] DateTime Datetime,
-    int EventTypeId
+    int EventTypeId,
+    Boolean Completed
 );

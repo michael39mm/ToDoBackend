@@ -257,3 +257,4 @@ C:\Users\hp\Desktop\ToDo-Backend\Orascom-Back-End\GameStore\GameStore.API\obj\De
 C:\Users\hp\Desktop\ToDo-Backend\Orascom-Back-End\GameStore\GameStore.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\hp\Desktop\ToDo-Backend\Orascom-Back-End\GameStore\GameStore.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\hp\Desktop\ToDo-Backend\Orascom-Back-End\GameStore\GameStore.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hp\Desktop\ToDo-Backend\Orascom-Back-End\GameStore\GameStore.API\obj\Debug\net9.0\GameStore.API.sourcelink.json

@@ -15,6 +15,7 @@ public static class EventsEndpoints
 
         app.MapGet("/events", (GameStoreContext store) =>
             store.Events.Include(e => e.EventType)
+            .Where(e => e.Completed == false)
                         .Select(e => e.toDto())
                         .AsNoTracking());
 

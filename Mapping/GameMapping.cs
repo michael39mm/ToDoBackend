@@ -13,7 +13,8 @@ public static class GameMapping
         {
             Name = dto.Name,
             Datetime = dto.Datetime,
-            EventTypeId = dto.EventTypeId
+            EventTypeId = dto.EventTypeId,
+            Completed = false
         };
     }
     public static Event ToEntity(this updateDto dto,int id)
@@ -23,7 +24,8 @@ public static class GameMapping
             Id = id,
             Name = dto.Name,
             Datetime = dto.Datetime,
-            EventTypeId = dto.EventTypeId
+            EventTypeId = dto.EventTypeId,
+            Completed = dto.Completed
         };
     }
     public static EventDto toDto(this Event eventt)
