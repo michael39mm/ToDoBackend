@@ -1,0 +1,25 @@
+GET http://localhost:5135/events
+###
+POST http://localhost:5135/events
+Content-Type: application/json
+
+{
+    
+  "name": "Tech Expo",
+  "dateTime": "2025-08-10T15:30:00",
+  "eventTypeId": 1
+
+}
+###
+PUT http://localhost:5135/events/1
+Content-Type: application/json
+
+{
+    
+  "name": "Orascom Expo",
+  "dateTime": "2025-08-10T15:30:00",
+  "eventTypeId": 1
+
+}
+### 
+DELETE http://localhost:5135/events/8
