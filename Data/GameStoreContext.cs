@@ -7,6 +7,7 @@ namespace GameStore.API.Data;
 public class GameStoreContext(DbContextOptions<GameStoreContext> options) : DbContext(options)
 {
     public DbSet<Event> Events => Set<Event>();
+    public DbSet<User> Users => Set<User>();
     public DbSet<EventType> EventTypes => Set<EventType>();
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

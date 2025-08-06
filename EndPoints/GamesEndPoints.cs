@@ -46,6 +46,17 @@ public static class EventsEndpoints
             store.SaveChanges();
             return Results.NoContent();
         }).WithParameterValidation();
+        app.MapPost("/login", (LoginDto login, GameStoreContext _context, TokenService tokenService) =>
+{
+    var user = _context.Users.FirstOrDefault(u => u.Email == login.Email && u.Password == login.Password);
+    
+    if (user is null)
+        return Results.Unauthorized();
+
+    var token = tokenService.GenerateJwtToken(user);
+    return Results.Ok(new { token });
+});
+
 
         app.MapDelete("/events/{id}", (int id, GameStoreContext store) =>
         {
@@ -55,5 +66,7 @@ public static class EventsEndpoints
 
         return app;
     }
+    
+
 }
 
