@@ -3336,11 +3336,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hp\\Desktop\\ToDo-Backend\\Orascom-Back-End\\GameStore\\GameStore.API\\GameStore.API.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\ToDoBackend\\GameStore.API.csproj",
       "projectName": "GameStore.API",
-      "projectPath": "C:\\Users\\hp\\Desktop\\ToDo-Backend\\Orascom-Back-End\\GameStore\\GameStore.API\\GameStore.API.csproj",
+      "projectPath": "C:\\Users\\hp\\Desktop\\ToDoBackend\\GameStore.API.csproj",
       "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hp\\Desktop\\ToDo-Backend\\Orascom-Back-End\\GameStore\\GameStore.API\\obj\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\ToDoBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config"

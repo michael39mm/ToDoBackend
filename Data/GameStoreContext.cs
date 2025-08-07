@@ -16,6 +16,14 @@ public class GameStoreContext(DbContextOptions<GameStoreContext> options) : DbCo
         new EventType { EventTypeId = 2, Name = "Conference" },
         new EventType { EventTypeId = 3, Name = "Workshop" },
         new EventType { EventTypeId = 4, Name = "Tech Talk" }
-    );
+        );
+
+        modelBuilder.Entity<User>().HasData(
+            new User { Id = 1, Email = "michael", Password = "mmaher" }
+        );
+
+
+
+
     }
 }
