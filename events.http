@@ -11,6 +11,16 @@ Content-Type: application/json
 
 }
 ###
+POST http://localhost:5135/loginn
+Content-Type: application/json
+
+{
+    
+  "email": "jim",
+  "password": "jimmy2005"
+
+}
+###
 PUT http://localhost:5135/events/1
 Content-Type: application/json
 

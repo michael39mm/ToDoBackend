@@ -36,6 +36,15 @@ public static class EventsEndpoints
             store.SaveChanges();
             return Results.CreatedAtRoute("getEvents", new { id = entity.Id }, entity.toDto());
         }).WithParameterValidation();
+        app.MapPost("/loginn", (LoginDto dto, GameStoreContext store) =>
+        {
+            var entity = dto.ToEntity();
+            if (store.Users.Any(u => u.Email == dto.Email))
+               return Results.Conflict("Email already exists.");
+            store.Users.Add(entity);
+            store.SaveChanges();
+            return Results.Ok(entity);
+        });
 
         app.MapPut("/events/{id}", (GameStoreContext store, updateDto dto, int id) =>
         {

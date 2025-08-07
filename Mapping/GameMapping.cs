@@ -28,6 +28,13 @@ public static class GameMapping
             Completed = dto.Completed
         };
     }
+    public static User ToEntity(this LoginDto dto) {
+        return new()
+        {
+            Email = dto.Email,
+            Password = dto.Password
+        };
+    }
     public static EventDto toDto(this Event eventt)
     {
         return new(eventt.Id, eventt.Name, eventt.Datetime, eventt.EventType.Name);
